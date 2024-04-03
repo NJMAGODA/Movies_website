@@ -4,12 +4,12 @@ class Movies
     private $baseTicketPrice = 50; // Base ticket price in Rands
     private $age;
 
-    public function __construct($age)
+    public function __construct($age = null)
     {
         $this->age = $age;
     }
 
-    public function calculateTicketPrice($age)
+    public function calculateTicketPrice($age = null)
     {
         $this->age = $age;
 
